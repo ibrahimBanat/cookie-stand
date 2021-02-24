@@ -1,0 +1,161 @@
+/* linear-gradient(70deg, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    /* background: linear-gradient(70deg, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
+    height: 100vh;
+    overflow: hidden; */
+    /* background-image: url("https://image.freepik.com/free-vector/blue-hand-drawn-fish-pattern_1076-18.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; */
+    /* width: 960px; */
+    line-height: 1.8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: RGBA(12,29,44,1);
+    color: #fff;
+    line-height: 68px;
+    overflow: hidden;
+    width: 100%;
+}
+nav h1 {
+    margin-left: 25px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+    width: 55%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.info__header {
+    background: #0c1d2c;
+    padding: 140px 0 195px;
+    width: 100%;
+}
+
+.header__desc {
+    text-align: center;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    
+}
+.header__desc img {
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid white;
+}
+.header__desc p {
+    color: white;
+}
+
+.header__desc button {
+    margin-top: 25px
+    ;
+}
+
+.img__container {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    margin-top: -125px;
+}
+#slider {
+    width: 780px;
+    height: 410px;
+    overflow: hidden;
+    /* box-shadow: ; */
+}
+
+#slider #images {
+    height:100%;
+    width: 100%;
+}
+#images img {
+    height: 100%;
+    width: 100%;
+    animation: show 1.25s;
+    /* animation-fill-mode: both; */
+}
+@keyframes show {
+    from {
+        transform:scale(0.8);
+        opacity:0.5
+    }
+    to {
+        transform: scale(1);
+        opacity:1
+    }
+}
+
+.desc__section {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+
+    margin-top: 35px;
+}
+.locations__Section {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    
+    margin-top: 35px;
+}
+
+#dubai div { 
+    /* width: 450px;
+    height: 450px; */
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px;
+    float: right;
+    background-color:white;
+    position: relative;
+    top: -400px;
+    right: 25px;
+    z-index: 100;
+}
+footer {
+    color: #c4ccd2;
+}
+
+.subscribe {
+    background-color: #1e2d41;
+    padding: 36px 0;
+}
+
+.subscribe>.block {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+.subscribe>.block>.social {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    text-align: left;
+}
