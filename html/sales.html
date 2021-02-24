@@ -7,7 +7,48 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="root"></section>
+    <section id="root">
+
+    </section>
+    <section id="from__container">
+        <!-- TODO
+            - Create a new HTML form to accept the information 
+            for a new cookie stand. Be sure to utulize the <fieldset> tag to help you style it.
+
+            - Upon submission of the HTML form, create an event handler that creates a new 
+            instance of a cookie stand that appends to the table upon form submission.
+
+            - Use the constructor function as your guide to determine what input fields your form needs
+
+            - the totals in the footer row should update to include these new sales numbers.
+        -->
+        <form id="addNewShop">
+            <fieldset>
+                <legend>Add Shop:</legend>
+
+                <label for="name">Shop Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="min-customers">Minimum Customers</label>
+                <input type="number" min="0" step="any" id="min-customers" name="min-customers" required>
+                
+
+                <label for="max-customers">Maximum Customers</label>
+                <input type="number" min="0" step="any" id="max-customers" name="max-customers" required>
+
+                <label for="average-cookies">Average Cookies Per Sale</label>
+                <input type="number" min="0" step="any" id="average-cookies" name="average-cookies" required>
+
+                <button type="submit" id="submit">Click Here to Add</button>
+                
+
+            </fieldset>
+        </form>
+
+            
+
+    </section>
+
     <script src="../js/app.js"></script>
     <!-- <script src="../js/test.js"></script> -->
 </body>

@@ -1,5 +1,6 @@
 'use strict';
-
+let formSubmit = document.getElementById('submit');
+const formEle = document.getElementById('addNewShop');
 // Global Array stores an object of each city after creating the instance
 let all = [];
 
@@ -8,7 +9,10 @@ let workingHours = ['6am', '7am', '8am', '9am', '10am', '11am',
   '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 let rootElement = document.getElementById('root'); // Getting root container from sales.html
-let MainTable = document.createElement('table'); // creating the table tag
+let MainTable = document.createElement('table');
+MainTable.setAttribute('id', 'table-co');// creating the table tag
+
+
 
 
 const Salmon = function (name, minCustmers, maxCustmers, averageSales) {
@@ -81,6 +85,7 @@ Salmon.prototype.contentRenderTotal = function () {
   let footerTable = document.createElement('tr');
   MainTable.appendChild(footerTable);
   let clomCell = document.createElement('th');
+  footerTable.setAttribute('id', 'total-row');
   footerTable.appendChild(clomCell);
   clomCell.textContent = ('Total');
   let totalOfTotal = 0;
@@ -110,6 +115,38 @@ Salmon.prototype.contentRenderTotal = function () {
   clomCell.textContent = totalOfTotal;
 
 };
+Salmon.prototype.updateTotalOfTotal = function () {
+  let removeTable = document.getElementById('total-row');
+  removeTable.remove();
+
+};
+
+Salmon.prototype.tableNewRowUpdate = function () {
+  // MainTable
+  let TableCont = document.getElementById('table-co');
+  console.log(TableCont);
+  let tableRow = document.getElementById('total-row');
+  let bodyTable = document.createElement('tr');
+  console.log(tableRow);
+  TableCont.insertBefore(bodyTable, tableRow);
+
+  let clomHeader = document.createElement('td');
+  bodyTable.appendChild(clomHeader);
+  clomHeader.textContent = (this.name);
+
+  for (let index = 0; index < this.cookiesPerHour.length; index++) {
+    // loops over the array which contains the random generated number for each inctance of each city and append it's values for each cell
+    clomHeader = document.createElement('td');
+    bodyTable.appendChild(clomHeader);
+    clomHeader.textContent = (this.cookiesPerHour[index]);
+  }
+  clomHeader = document.createElement('td');
+  bodyTable.appendChild(clomHeader);
+  clomHeader.textContent = (this.toatalCookies);
+
+};
+
+
 
 
 
@@ -144,3 +181,36 @@ paris.contentRenderBody();
 lima.averageCookiesPerHour();
 lima.contentRenderBody();
 lima.contentRenderTotal();
+
+
+formEle.addEventListener('submit', function(event){
+  event.preventDefault();
+  // event.target.name.value
+  // name = event.target.name.value;
+  // console.log(name);
+  // console.log(event.target);
+  const name = document.getElementById('name').value;
+  const minCustmer = document.getElementById('min-customers').value;
+  const maxCustmer = document.getElementById('max-customers').value;
+  const avgCustmer = document.getElementById('average-cookies').value;
+  formEle.reset();
+  const shop = new Salmon(name, minCustmer, maxCustmer, avgCustmer);
+
+  Salmon.prototype.updatTable = function(name, minCustmer, maxCustmer, avgCustmer) {
+    console.log(all);
+    /* Procedure:
+      - Update the array of object with the new object✅
+      - fill in the new row with random numbers ✅
+      - append the row above the total row ✅
+      - updtae total of total
+    */
+    shop.averageCookiesPerHour();
+    // shop.contentRenderBody();
+    shop.tableNewRowUpdate();
+    shop.updateTotalOfTotal();
+    shop.contentRenderTotal();
+
+  };
+
+  shop.updatTable();
+});
