@@ -25,6 +25,8 @@ nav {
     line-height: 68px;
     overflow: hidden;
     width: 100%;
+    font-family: 'Inter', sans-serif;
+
 }
 nav h1 {
     margin-left: 25px;
@@ -36,6 +38,7 @@ nav div {
     justify-content: space-between;
     margin-right: 25px;
     width: 55%;
+    font-size: 20px;
 }
 
 nav div a {
@@ -43,7 +46,36 @@ nav div a {
     color: #fff;
     
 }
-
+.sales {
+    background-color: rgb(11, 105, 237);
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    font-weight: 700;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid rgb(11, 105, 237);
+    font-family: 'Inter', sans-serif;
+}
+.contact {
+    background-color:#3cbc10;
+    line-height: 20px;
+    letter-spacing: 1px;
+    /* margin: 0 5px; */
+    font-weight: 700;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    height: 30px;
+    /* width: 60px; */
+    border: 1px solid#3cbc10;
+    font-family: 'Inter', sans-serif;
+}
 .info__header {
     background: #0c1d2c;
     padding: 140px 0 195px;
@@ -63,13 +95,29 @@ nav div a {
     margin-bottom: 5px;
     border: 3px solid white;
 }
-.header__desc p {
+.header__desc h2 {
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px ;
 }
 
 .header__desc button {
-    margin-top: 25px
-    ;
+    margin-top: 15px;
+    background-color: #0b69ed;
+    border: 1px solid #0b69ed;
+    /* line-height: 20px; */
+    letter-spacing: 1px;
+    /* margin: 0 5px; */
+    font-weight: 400;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 100px;
+    height: 40px;
+    width: 90px;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 .img__container {
@@ -159,3 +207,9 @@ footer {
     flex: 1 1 auto;
     text-align: left;
 }
+
+.desc__section div p { 
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+/* font-family: 'Inter', sans-serif; */
