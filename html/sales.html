@@ -5,50 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/sales.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <!-- <img class ="nav__logo" src="" alt=""> -->
+            <h1>Salmon Cookies</h1>
+            <div class="nav__link">
+                <a href="#">Help</a>
+                <a href="#">Features</a>
+                <a href="#">Blog</a>
+                <a href="#">Try</a>
+                <a href="#">Free</a>
+                <a href="#">Account</a>
+                <button class="sales"><a href="../index.html">Home</a></button>
+                <button class="contact">Contact</button>
+            </div>
+        </nav>
+        <section class="box">
+            <div class="form-cont">
+                <div class="box-box">
+                    <div class="left-section">
+                        <div>
+                            <i class="fas fa-fish"></i>
+                            <h2>Salmon</h2>
+                        </div>
+                        <img class ="img-fish-icon" src="https://clipart-best.com/img/fish/fish-clip-art-104.png" width="100px" height="100px" alt="">
+                    </div>
+                    <form id="addNewShop">
+                        <fieldset>
+                            <legend>Add Shop:</legend>
+        
+                            <label for="name">Shop Name</label>
+                            <input type="text" id="name" name="name" required>
+        
+                            <label for="min-customers">Minimum Customers</label>
+                            <input type="number" min="0" step="any" id="min-customers" name="min-customers" required>
+                            
+        
+                            <label for="max-customers">Maximum Customers</label>
+                            <input type="number" min="0" step="any" id="max-customers" name="max-customers" required>
+        
+                            <label for="average-cookies">Average Cookies Per Sale</label>
+                            <input type="number" min="0" step="any" id="average-cookies" name="average-cookies" required>
+        
+                            <button type="submit" id="submit">Click Here to Add</button>
+                            
+        
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
     <section id="root">
 
-    </section>
+    
     <section id="from__container">
-        <!-- TODO
-            - Create a new HTML form to accept the information 
-            for a new cookie stand. Be sure to utulize the <fieldset> tag to help you style it.
+            <!-- TODO
+                - Create a new HTML form to accept the information 
+                for a new cookie stand. Be sure to utulize the <fieldset> tag to help you style it.
 
-            - Upon submission of the HTML form, create an event handler that creates a new 
-            instance of a cookie stand that appends to the table upon form submission.
+                - Upon submission of the HTML form, create an event handler that creates a new 
+                instance of a cookie stand that appends to the table upon form submission.
 
-            - Use the constructor function as your guide to determine what input fields your form needs
+                - Use the constructor function as your guide to determine what input fields your form needs
 
-            - the totals in the footer row should update to include these new sales numbers.
-        -->
-        <form id="addNewShop">
-            <fieldset>
-                <legend>Add Shop:</legend>
-
-                <label for="name">Shop Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="min-customers">Minimum Customers</label>
-                <input type="number" min="0" step="any" id="min-customers" name="min-customers" required>
-                
-
-                <label for="max-customers">Maximum Customers</label>
-                <input type="number" min="0" step="any" id="max-customers" name="max-customers" required>
-
-                <label for="average-cookies">Average Cookies Per Sale</label>
-                <input type="number" min="0" step="any" id="average-cookies" name="average-cookies" required>
-
-                <button type="submit" id="submit">Click Here to Add</button>
-                
-
-            </fieldset>
-        </form>
-
+                - the totals in the footer row should update to include these new sales numbers.
+            -->
+            
             
 
-    </section>
+                
 
+        </section>
+</section>
+
+    <script src="https://kit.fontawesome.com/fb27425b9e.js" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
     <!-- <script src="../js/test.js"></script> -->
 </body>

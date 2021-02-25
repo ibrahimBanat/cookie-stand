@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+    width: 55%;
+    font-size: 20px;
+}
+nav h1 {
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: RGBA(12,29,44,1);
+    color: #fff;
+    line-height: 68px;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+
+}
+
+nav div a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.sales {
+    background-color: rgb(11, 105, 237);
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    font-weight: 700;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid rgb(11, 105, 237);
+    font-family: 'Inter', sans-serif;
+}
+.contact {
+    background-color:#3cbc10;
+    line-height: 20px;
+    letter-spacing: 1px;
+    /* margin: 0 5px; */
+    font-weight: 700;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    height: 30px;
+    /* width: 60px; */
+    border: 1px solid#3cbc10;
+    font-family: 'Inter', sans-serif;
+}
+
+#root {
+    width: 100%
+    /* margin: auto; */
+}
+
+.form-cont {
+    width: 100%;
+    background-color: RGBA(12,29,44,1);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 30px; */
+    padding: 50px 0px;
+    /* border: 1px solid black; */
+}
+
+.form-cont .box-box {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 60%;
+    height: 80%;
+    border: 1px solid black;
+    /* padding: 30px; */
+    background-color: white;
+    /* flex: 1; */
+}
+#addNewShop fieldset{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* flex: 2; */
+    /* margin: 40px 60px; */
+    /* margin: 50px */
+}
+
+.left-section {
+    /* flex: 0.5; */
+    /* margin: 40px 60px; */
+    /* margin: 50px; */
+    background: #16202e;
+    height: 100%;
+    width: 60%;
+    flex: 0.5;
+    /* margin-right: 40px; */
+    position: relative;
+}
+.box {
+    width: 100%;
+    /* padding: 50px 0; */
+}
+
+#addNewShop {
+    /* width: 10%; */
+    width: 40%;
+}
+
+.img-fish-icon {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}

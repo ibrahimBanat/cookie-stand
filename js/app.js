@@ -196,7 +196,7 @@ formEle.addEventListener('submit', function(event){
   formEle.reset();
   const shop = new Salmon(name, minCustmer, maxCustmer, avgCustmer);
 
-  Salmon.prototype.updatTable = function(name, minCustmer, maxCustmer, avgCustmer) {
+  Salmon.prototype.updatTable = function() {
     console.log(all);
     /* Procedure:
       - Update the array of object with the new object✅

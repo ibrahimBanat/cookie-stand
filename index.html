@@ -21,7 +21,7 @@
                 <a href="#">Try</a>
                 <a href="#">Free</a>
                 <a href="#">Account</a>
-                <button class="sales">Sales</button>
+                <button class="sales">Shops</button>
                 <button class="contact">Contact</button>
             </div>
         </nav>
@@ -31,19 +31,19 @@
             <img src="/assets/ramonanemethcsoka-1.png" alt="">
             <h2>Soon franchises internationally</h2>
 
-            <button>View Stores</button>
+            <button><a href="./html/sales.html">Go to Sales</a></button>
         </div>
     </header>
     <div class="img__container">
         <div id="slider">
             <div id="images">
-                <img class="fishImg" src="/assets/slider/chinook.jpg" alt="">
-                <img class="fishImg" src="/assets/slider/cutter.jpeg" alt="">
-                <img class="fishImg" src="/assets/slider/family.jpg" alt="">
-                <img class="fishImg" src="/assets/slider/fish.jpg" alt="">
-                <img class="fishImg" src="/assets/slider/frosted-cookie.jpg" alt="">
-                <img class="fishImg" src="/assets/slider/salmon.png" alt="">
-                <img class="fishImg" src="/assets/slider/shirt.jpg" alt="">
+                <img class="fishImg" src="./assets/slider/chinook.jpg" alt="">
+                <img class="fishImg" src="./assets/slider/cutter.jpeg" alt="">
+                <img class="fishImg" src="./assets/slider/family.jpg" alt="">
+                <img class="fishImg" src="./assets/slider/fish.jpg" alt="">
+                <img class="fishImg" src="./assets/slider/frosted-cookie.jpg" alt="">
+                <img class="fishImg" src="./assets/slider/salmon.png" alt="">
+                <img class="fishImg" src="./assets/slider/shirt.jpg" alt="">
             </div>
         </div>
     </div>
@@ -61,14 +61,25 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi consequuntur expedita dolore officia consectetur laudantium quibusdam totam earum. 
                 Pariatur atque quis quibusdam quam repellat nisi iste beatae, et maiores consectetur.
             </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptates maxime inventore iste! Quam asperiores quisquam reiciendis recusandae, laborum ipsum eligendi,
+                 praesentium placeat, officiis deleniti enim ducimus reprehenderit fugiat repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptates maxime inventore iste! Quam asperiores quisquam reiciendis recusandae, laborum ipsum eligendi,
+                 praesentium placeat, officiis deleniti enim ducimus reprehenderit fugiat repellendus.</p>
         </div>
     </section>
     <section class="locations__Section">
-        <div>
+        <div class="locations">
             <h3>Our Shops</h3>
+            <div class="shops">
+                <button onClick="seattle()">Seattle</button>
+                <button onClick="tokyo()">Tokyo</button>
+                <button onClick="dubai()">Dubai</button>
+                <button onClick="paris()">Paris</button>
+                <button onClick="lima()">Lima</button>
+            </div>
             <div id="dubai">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40872.13082352692!2d55.18563172622573!3d25.114717908247936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1529c2653b15%3A0x3dcabcae764a3e16!2z2YbYrtmE2Kkg2KfZhNis2YXZitix2Kk!5e0!3m2!1sar!2sjo!4v1614115968832!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <div>
+                <div class="location-info-card">
                     <h2>Dubai</h2>
                     <p>Hours Open: 6-7 pm</p>
                     <p>350 5th Ave, New York, NY 10118</p>
@@ -77,20 +88,101 @@
 
                 </div>
             </div>
+            <div id="tokyo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12988.673068861175!2d139.7512778757218!3d35.5248392474054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601866ce00a3a783%3A0xe46d5d10742612be!2zU2hpb2hhbWEsIEthd2FzYWtpIFdhcmQsINmD2KfZiNin2LPYp9mD2YrYjCDZg9in2YbYp9i62KfZiNinIDIxMC0wODI22Iwg2KfZhNmK2KfYqNin2YY!5e0!3m2!1sar!2sjo!4v1614240987138!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="location-info-card">
+                    <h2>Tokyo</h2>
+                    <p>Hours Open: 6-7 pm</p>
+                    <p>350 5th Ave, Tokyo, NY 10118</p>
+                    <p>1 212-736-3100</p>
+                    <p><a href="#">contacts.tokyo@salmon.com</a></p>
+
+                </div>
+            </div>
+            <div id="seattle">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172138.6542662358!2d-122.20197904036375!3d47.61317464161802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2z2LPZitin2KrZhNiMINmI2KfYtNmG2LfZhtiMINin2YTZiNmE2KfZitin2Kog2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2sjo!4v1614241081621!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="location-info-card">
+                    <h2>Seattle</h2>
+                    <p>Hours Open: 6-7 pm</p>
+                    <p>350 5th Ave, Seattle, NY 10118</p>
+                    <p>1 212-736-3100</p>
+                    <p><a href="#">contacts.seattle@salmon.com</a></p>
+
+                </div>
+            </div>
+            <div id="paris">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172470.05384731034!2d-122.16824972652137!3d47.51241769846489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c5c90ceec18a80!2sThe%20Paris%20Group%20NW!5e0!3m2!1sar!2sjo!4v1614241172494!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="location-info-card">
+                    <h2>Paris</h2>
+                    <p>Hours Open: 6-7 pm</p>
+                    <p>350 5th Ave, Paris, NY 10118</p>
+                    <p>1 212-736-3100</p>
+                    <p><a href="#">contacts.paris@salmon.com</a></p>
+
+                </div>
+            </div>
+            <div id="lima">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.479405624139!2d-77.03469715322213!3d-12.052474645477453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cdda920321%3A0x5a9006b98dce9055!2sEstaci%C3%B3n%202%20de%20Mayo!5e0!3m2!1sar!2sjo!4v1614241217916!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="location-info-card">
+                    <h2>Lima</h2>
+                    <p>Hours Open: 6-7 pm</p>
+                    <p>350 5th Ave, Lima, NY 10118</p>
+                    <p>1 212-736-3100</p>
+                    <p><a href="#">contacts.lima@salmon.com</a></p>
+
+                </div>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="subscribe">
-                <div class="block">
-                    <div class="social">
-                        <div>
-                            <h6>Join the community</h6>
-                            <p>Follow us and stay connected and updated.</p>
-                        </div>
-                    </div>
+        <nav>
+            <div class="footer__container">
+                <div class="footer-company info-col">
+                    <h6>Company</h6>
+                    <hr>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+                <div class="footer-support info-col">
+                    <h6>Support</h6>
+                    <hr>
+                    <ul>
+                        <li>Documentation</li>
+                        <li>Pricing</li>
+                        <li>FAQ</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="footer-social info-col">
+                    <h6>Social</h6>
+                    <hr>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Blog</li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-links info-col">
+                    <h6>Quick Links</h6>
+                    <hr>
+                    <ul>
+                        <li>Login</li>
+                        <li>Become an Affilliate</li>
+                        <li>Why Upgrade to Pro</li>
+                        
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </nav>
+        <div class="rights">
+            Copyright © 2021 Salmon. All rights reserved.</div>
+    </footer>
                     
         
         
