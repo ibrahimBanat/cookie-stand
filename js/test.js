@@ -206,13 +206,3 @@ formEle.addEventListener('submit', function (event) {
     shop.updatTable();
   }
 });
-
-let scrollOnSubmit = document.getElementById('submit');
-
-scrollOnSubmit.addEventListener('click', function () {
-  rootElement.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-    inline: 'start',
-  });
-});
