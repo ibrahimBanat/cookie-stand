@@ -187,10 +187,12 @@ formEle.addEventListener('submit', function (event) {
   const maxCustmer = Number(document.getElementById('max-customers').value);
   const avgCustmer = Number(document.getElementById('average-cookies').value);
   if (minCustmer >= maxCustmer) {
-    alert('try again');
+    alert(
+      'You Entered the max number in the min field, please fix the inputs and try again'
+    );
   } else {
     formEle.reset();
-    console.log(name, minCustmer, maxCustmer, avgCustmer);
+    // console.log(name, minCustmer, maxCustmer, avgCustmer);
     const shop = new Salmon(name, minCustmer, maxCustmer, avgCustmer);
 
     Salmon.prototype.updatTable = function () {
@@ -212,7 +214,7 @@ let scrollOnSubmit = document.getElementById('submit');
 scrollOnSubmit.addEventListener('click', function () {
   rootElement.scrollIntoView({
     behavior: 'smooth',
-    block: 'start',
-    inline: 'start',
+    // block: 'start',
+    // inline: 'start',
   });
 });

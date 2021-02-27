@@ -62,14 +62,14 @@ const footer = document.querySelector('footer');
 salesButton.addEventListener('click', function () {
   shopLocations.scrollIntoView({
     behavior: 'smooth',
-    block: 'start',
-    inline: 'start',
+    // block: 'start',
+    // inline: 'start',
   });
 });
 contactButton.addEventListener('click', function () {
   footer.scrollIntoView({
     behavior: 'smooth',
-    block: 'start',
-    inline: 'start',
+    // block: 'start',
+    // inline: 'start',
   });
 });
